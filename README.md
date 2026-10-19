@@ -3,6 +3,19 @@ Meshcore RPM
 
 Сборщик rpm пакета с клиентом для [Meshcore](https://meshcoretel.ru/ru) с официальным Desctop GUI приложением из [https://files.liamcottle.net/MeshCore/](https://files.liamcottle.net/MeshCore/). Проверено на дистрибутиве Fedora 43 Linux (сборка LXQT)
 
+Зачем?
+============================
+
+1. В RPM дистрибутивах (включая Fedora Linux) нет GUI приложения для Meshcore  - https://www.rpmfind.net/linux/rpm2html/search.php?query=meshcore
+2. В COPR пакетов также нет https://copr.fedorainfracloud.org/coprs/fulltext/?fulltext=meshcore
+3. В официальной сборке Meshcore клиента для Linux есть просто zip архив, с исполнимыми файлами и библиотеками, который не понятно как правильно устанавливать
+
+Поэтому, я решил написать утилиту, которая 
+
+1. Загружает официальный zip архив с GUI клиентом Meshcore
+2. Перепаковывает его в установочный пакет rpm
+3. Пакет легко устанавливается, а также легко удаляется\обновляется.
+
 Зависимости
 ============================
 
