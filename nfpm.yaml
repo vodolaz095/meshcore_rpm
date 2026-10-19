@@ -1,0 +1,30 @@
+# This is an example nfpm configuration file.
+# Make sure to check the documentation at https://nfpm.goreleaser.com
+# See https://github.com/goreleaser/nfpm/blob/main/www/content/docs/configuration.md
+#
+# The lines below are called `modelines`. See `:help modeline`
+# Feel free to remove those if you don't want/need to use them.
+# yaml-language-server: $schema=https://nfpm.goreleaser.com/static/schema.json
+# vim: set ts=2 sw=2 tw=0 fo=cnqoj
+
+name: "meshcore"
+arch: "x86_64"
+platform: "linux"
+version: ${SEMVER}
+section: "default"
+priority: ""
+provides:
+  - meshcore
+recommends: []
+suggests: []
+conflicts: []
+maintainer: "Anatolij Nowak <anatolij@vodolaz095.ru>"
+description: Meshcore Desktop Application
+vendor: "Anatolij Nowak"
+homepage: "https://github.com/vodolaz095/meshcore_rpm"
+license: "MIT"
+contents:
+  - src: ./opt/
+    dst: /opt/meshcore
+  - src: ./meshcore.desktop
+    dst: /usr/share/applications/meshcore.desktop

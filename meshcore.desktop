@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.50.0
+Type=Application
+Name=MeshCore
+Icon=/opt/meshcore/data/flutter_assets/assets/images/icon.png
+Exec=/opt/meshcore/MeshCore
+Comment=MeshCore
+Categories=Network;InstantMessaging;Chat;
+Terminal=false
+Name[en_US]=MeshCore
+Comment[en_US]=MeshCore
