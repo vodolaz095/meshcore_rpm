@@ -1,7 +1,7 @@
 Meshcore RPM
 ============================
 
-Сборщик rpm пакета с [Meshcore](https://meshcoretel.ru/ru) из [https://files.liamcottle.net/MeshCore/](https://files.liamcottle.net/MeshCore/). Проверено на дистрибутиве Fedora 43 Linux (сборка LXQT)
+Сборщик rpm пакета с клиентом для [Meshcore](https://meshcoretel.ru/ru) с официальным Desctop GUI приложением из [https://files.liamcottle.net/MeshCore/](https://files.liamcottle.net/MeshCore/). Проверено на дистрибутиве Fedora 43 Linux (сборка LXQT)
 
 Зависимости
 ============================
@@ -23,5 +23,5 @@ Meshcore RPM
 - `make clean` - удаляет временные файлы
 - `make download` - качает zip архив из https://files.liamcottle.net/MeshCore/
 - `make unpack` - распаковывает архив в `./opt/`
-- `make rpm` - собирает `rpm` пакетв в директорию по умолчанию - `~/rpmbuild/RPMS/x86_64/`
+- `make rpm` - собирает `rpm` пакет в в директорию по умолчанию - `~/rpmbuild/RPMS/x86_64/`
 - `make sign` - подписывает и публикует `rpm` пакет во внутренний репозиторий (обычно, не нужно)
